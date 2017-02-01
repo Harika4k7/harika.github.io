@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>IMAGE</title>
+</head>
+<h1><center>SVG IMAGE</center></h1>
+<body>
+<br><?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="100%" height="100%" version="1.1"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"> 
+
+<defs>
+ <ellipse id="myEllipse" cx="300" cy="200" rx="200" ry="50" />
+</defs>
+
+<defs>
+ <linearGradient id="gradient_yellow">
+   <stop stop-color="rgb(255,255,0)" offset="0"/>
+   <stop stop-color="red" offset="100%"/>
+ </linearGradient>
+ <linearGradient id="gradient_purple">
+   <stop stop-color="rgb(255,0,255)" offset="0"/>
+   <stop stop-color="blue" offset="100%"/>
+ </linearGradient>
+ <linearGradient id="gradient_cyan">
+   <stop stop-color="rgb(0,255,255)" offset="0"/>
+   <stop stop-color="green" offset="100%"/>
+ </linearGradient>
+
+ <linearGradient id="gradient_left_to_right" xlink:href="#gradient_yellow"
+   x1="0" y1="50%" x2="100%" y2="50%" />
+ <linearGradient id="gradient_top_to_bottom" xlink:href="#gradient_cyan"
+   x1="50%" y1="0%" x2="50%" y2="100%" />
+ <linearGradient id="gradient_bottom_to_top" xlink:href="#gradient_purple"
+   x1="50%" y1="100%" x2="50%" y2="0%" />
+</defs>
+
+<use xlink:href="#myEllipse" opacity="0.5" 
+  fill="url(#gradient_left_to_right)" 
+  stroke="red" stroke-width="5" 
+  transform="rotate(0) " />
+<use xlink:href="#myEllipse" opacity="0.5"
+  fill="url(#gradient_bottom_to_top)" 
+  stroke="blue" stroke-width="5" 
+  transform="rotate(45,300,200)" />
+<use xlink:href="#myEllipse" opacity="0.5" 
+  fill="url(#gradient_top_to_bottom)" 
+  stroke="rgb(0,255,0)" stroke-width="5" 
+  transform="rotate(-45,300,200)" />
+</svg>
+<img src= "C:\Users\My World\Pictures\Ur's Choice 275000\d_spin_9-1186646734.jpg" height="800px" width="900px" style="float:center">
+
+	</body>
+   	</html>
